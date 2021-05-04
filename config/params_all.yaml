@@ -1,0 +1,41 @@
+predict:
+  SEED: 10
+  comments:
+    YOUTUBE_API_KEY: ПОДСТАВЬ_СВОЙ_API_KEY
+    count_video: 20
+    limit: 30
+    maxResults: 100
+    nextPageToken: ''
+    query: дата сайенс
+  dir_folder: /Users/miracl6/airflow-mlflow-tutorial
+  model_lr: LogisticRegression
+  model_vec: vector_tfidf
+  name_file: data/text.csv
+  num_top: 10
+  stopwords: russian
+  version_lr: 34
+  version_vec: 34
+train:
+  SEED: 10
+  clustering:
+    affinity: cosine
+    count_max_clusters: 15
+    silhouette_metric: euclidean
+  comments:
+    YOUTUBE_API_KEY: ПОДСТАВЬ_СВОЙ_API_KEY
+    count_video: 50
+    limit: 30
+    maxResults: 250
+    nextPageToken: ''
+    query: дата сайенс
+  cross_val:
+    test_size: 0.3
+  dir_folder: /Users/miracl6/airflow-mlflow-tutorial
+  model:
+    class_weight: balanced
+  model_lr: LogisticRegression
+  model_vec: vector_tfidf
+  name_experiment: my_third
+  stopwords: russian
+  tf_model:
+    max_features: 300

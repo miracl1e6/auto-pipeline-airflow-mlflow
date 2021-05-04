@@ -1,0 +1,12 @@
+.DS_Store
+.idea
+.ipynb_checkpoints
+.pytest_cache
+
+**/.DS_Store
+**/.ipynb_checkpoints
+
+mlflow/**
+myvenv/**
+log/**
+**/__pycache__/**
